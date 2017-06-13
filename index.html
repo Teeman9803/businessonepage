@@ -1,0 +1,257 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Business Template</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.min.css">
+	<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+<!-- Header Template -->
+<script id="header-template" type="text/x-handlebars-template">
+	<header id="home" class="jumbotron">
+		<nav class="navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+									aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#home">{{header.logo}}</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav pull-right">
+						{{#each nav}}
+						<li><a href="{{url}}">{{text}}</a></li>
+						{{/each}}
+					</ul>
+				</div><!--/.navbar-collapse -->
+			</div>
+		</nav>
+		<div class="container">
+			<h1>{{header.tagline}}</h1>
+			<p>{{header.subtext}}</p>
+			<p><a class="btn btn-primary btn-lg" href="#" role="button">{{header.buttonText}}</a></p>
+		</div>
+	</header>
+</script>
+
+<!-- About Us Template -->
+<script id="about-template" type="text/x-handlebars-template">
+	<section id="about" class="container slab text-center">
+		<!-- Example row of columns -->
+		<div class="row">
+			{{#each about}}
+			<div class="col-md-4 slab-{{background}}">
+				<i class="fa fa-{{icon}} fa-6"></i>
+				<h2>{{title}}</h2>
+				<p>{{text}}</p>
+			</div>
+			{{/each}}
+		</div>
+	</section> <!-- /container -->
+</script>
+
+<!-- Services Template -->
+<script id="services-template" type="text/x-handlebars-template">
+	<section id="services" class="container slab">
+		<!-- Example row of columns -->
+		{{#each services}}
+		<div class="row slab-{{background}}">
+			<div class="col-md-6 full-width">
+				<img width=100% src="img/{{img}}" alt="">
+			</div>
+			<div class="col-md-6 slab-{{background}}">
+				<h2>{{title}}</h2>
+				<p>{{text}}</p>
+			</div>
+		</div> <!-- /container -->
+		{{/each}}
+	</section>
+</script>
+
+<!-- Gallery Template -->
+<script id="gallery-template" type="text/x-handlebars-template">
+	<section id="gallery" class="container slab text-center">
+		<!-- Example row of columns -->
+		<div class="row">
+			{{#each gallery}}
+				<a data-toggle="lightbox" href="#{{lightbox}}">
+					<div class="overlay"></div>
+					<i class="fa fa-search"></i>
+					<img width=auto height=400 src="img/{{img}}" alt="">
+				</a>
+			<div id="{{lightbox}}" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+				<div class='lightbox-dialog'>
+					<div class='lightbox-content'>
+						<img src="img/{{img}}">
+						<div class='lightbox-caption'>
+							{{caption}}
+						</div>
+					</div>
+				</div>
+			</div>
+			{{/each}}
+		</div>
+	</section> <!-- /container -->
+</script>
+
+<!-- Testimonials Template -->
+<script id="testimonials-template" type="text/x-handlebars-template">
+	<section id="testimonials" class="container slab slab-orange">
+		<!-- Example row of columns -->
+		<div class="row">
+			<div class="col-md-12">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						{{#each testimonials}}
+						<div class="item {{active}}">
+							<div class="quote">
+								<div class="avatar">
+									<img src={{image}} alt=""/>
+								</div>
+								<div class="client">
+									<h2 class="company">{{name}}</h2>
+									<h3 class="title">{{title}}, {{client}}</h3>
+									<div class="statement">{{quote}}</div>
+								</div>
+							</div>
+						</div>
+						{{/each}}
+					</div>
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</section> <!-- /container -->
+</script>
+
+<!-- Contact Template -->
+<script id="contact-template" type="text/x-handlebars-template">
+	<section id="contact" class="container slab text-center">
+		<!-- Example row of columns -->
+		<div class="row">
+			<div class="col-md-12 slab-orange">
+				<h2>{{contact.title}}</h2>
+				<p class="contact-text">{{contact.text}}</p>
+				<!--<form method="post" action="">
+					<div class="form-group">
+						<input name="robotest" type="text" id="robotest" class="robotest" />
+					</div>
+					<div class="form-group">
+						<input name="name" type="text" class="form-control" id="exampleInputName2" placeholder="Full Name">
+					</div>
+					<div class="form-group">
+						<input name="email" type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<textarea name="message" class="form-control" id="exampleTextarea" rows="6" placeholder="Message"></textarea>
+					</div>
+				</form>-->
+					<a href="mailto:{{contact.email}}" class="btn btn-primary btn-dark">{{contact.buttonText}}</a>
+			</div>
+		</div>
+	</section> <!-- /container -->
+</script>
+
+<script id="footer-template" type="text/x-handlebars-template">
+	<footer class="slab">
+		<div class="col-md-12 slab-dark">
+			<div class="col-md-3">
+					<h4>{{footer.company.logo}}</h4>
+					<address>
+						{{footer.company.street}}<br>
+						{{footer.company.city}}, {{footer.company.state}}, {{footer.company.zip}}<br>
+						{{footer.company.phone}}<br>
+						<a href="mailto:{{footer.company.email}}">{{footer.company.email}}</a><br>
+					</address>
+				{{#each footer.social}}
+					<a href="{{url}}"><i class="fa fa-{{icon}} fa-1"></i></a>
+				{{/each}}
+			</div>
+			<div class="col-md-2">
+				<h4>Company</h4>
+				<ul class="list-unstyled">
+					{{#each footer.linkSection.links}}
+					<li><a href="{{url}}">{{text}}</a></li>
+					{{/each}}
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h4>Support</h4>
+				<ul class="list-unstyled">
+					{{#each footer.linkSection.support}}
+					<li><a href="{{url}}">{{text}}</a></li>
+					{{/each}}
+				</ul>
+			</div>
+			<div class="col-md-3">
+				&copy; {{footer.copyright}}
+			</div>
+		</div>
+	</footer>
+</script>
+
+<!-- Main Template -->
+<script id="site-template" type="text/x-handlebars-template">
+	{{> header}}
+	{{> about}}
+	{{> services}}
+	{{> gallery}}
+	{{> testimonials}}
+	{{> contact}}
+	{{> footer}}
+</script>
+
+<!-- Template Entry Point -->
+<div id="main-container"></div>
+
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/handlebars/handlebars.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.min.js"></script>
+<script src="http://smtpjs.com/smtp.js"></script>
+<script src="js/main.js"></script>
+<script src="js/data.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+	(function (b, o, i, l, e, r) {
+		b.GoogleAnalyticsObject = l;
+		b[l] || (b[l] =
+			function () {
+				(b[l].q = b[l].q || []).push(arguments)
+			});
+		b[l].l = +new Date;
+		e = o.createElement(i);
+		r = o.getElementsByTagName(i)[0];
+		e.src = 'https://www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e, r)
+	}(window, document, 'script', 'ga'));
+	ga('create', 'UA-XXXXX-X', 'auto');
+	ga('send', 'pageview');
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "site-template",
+  "version": "0.0.0",
+  "authors": [
+    "terrallewis <tldesignsprintandweb@gmail.com>"
+  ],
+  "description": "products-template",
+  "license": "MIT",
+  "homepage": "www.terrallewis.me",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "bootstrap-lightbox": "~0.7.0",
+    "font-awesome": "~4.7.0",
+    "handlebars": "~4.0.5",
+    "modernizr": "~3.3.1"
+  }
+}

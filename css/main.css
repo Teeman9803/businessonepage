@@ -1,0 +1,396 @@
+:root {
+	--color-1 : #333;
+	--color-2 : #e85a2c;
+	--color-3 : #655a57;
+	--color-4 : #716f6f;
+}
+
+body {
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: .025em;
+	font-weight: 100;
+}
+
+.btn {
+	border: 0;
+	border-radius: 25px;
+	padding: 14px 50px;
+}
+
+.btn-primary {
+	background: #333;
+	background: var(--color-1);
+	transition: all .33s ease-in-out;
+}
+
+.btn-primary.btn-dark {
+	background: #333;
+	background: var(--color-1);
+	transition: all .33s ease-in-out;
+}
+
+.btn-primary.btn-dark:hover,
+.btn-primary.btn-dark:focus {
+	background-color: #655a57;
+	background-color: var(--color-3);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: #e85a2c;
+	background-color: var(--color-2);
+}
+
+.nav .active {
+	color: var(--color-2);
+	color: #e85a2c;
+	transition: color .33s ease-in-out;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: transparent;
+}
+
+.jumbotron {
+	background-image: url("../img/cup-of-coffee.jpg");
+	background-size: cover;
+	background-position: top center;
+	margin-bottom: 0;
+	height: 700px;
+}
+
+.jumbotron .container {
+	color: #fff;
+	text-align: center;
+}
+
+.jumbotron > .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: calc(100% - 100px);
+}
+
+.jumbotron > .container p {
+	margin-bottom: 30px;
+}
+
+.jumbotron h1 {
+	font-size: 100px;
+	font-weight: 600;
+	letter-spacing: -3px;
+	margin-bottom: 25px;
+}
+
+.jumbotron h1.navbar-brand {
+	font-size: 4px;
+}
+
+.jumbotron nav a {
+	color: #fff;
+	font-weight: 500;
+}
+
+.jumbotron .btn-lg {
+	font-size: 21px;
+}
+
+.slab {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+}
+
+.slab [class*='col-md-'] {
+	padding: 100px 80px;
+}
+
+[class*='fa-'] {
+	font-size: 75px;
+}
+
+[class*='slab'] h2 {
+	margin: 30px 0;
+	font-weight: 400;
+	font-size: 36px;
+}
+
+[class*='slab-'] {
+	color: #fff;
+}
+
+.slab-dark {
+	background-color: #333;
+	background-color: var(--color-1);
+}
+
+.slab-orange {
+	background-color: #e85a3c;
+	background-color: var(--color-2);
+}
+
+.slab-brown {
+	background-color: #655a57;
+	background-color: var(--color-3);
+}
+
+.slab-light {
+	background-color: #716f6f;
+	background-color: var(--color-4);
+}
+
+[class*='col-md-'].full-width {
+	padding: 0;
+}
+
+#services .row:nth-child(even) .full-width {
+	order: 1;
+}
+
+#services .row[class*='slab'] {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-fixed-top {
+	background-color: #333;
+	padding: 10px 0;
+	transition: all .33s ease-in;
+}
+
+/**** Gallery ****/
+#gallery {
+	overflow: hidden;
+	width: 100%;
+	height: 400px;
+}
+
+#gallery .row {
+	overflow: hidden;
+	width: 7212px;
+}
+
+#gallery img {
+	margin-left: -5px;
+	transition: all 0.5s ease;
+}
+
+/*keyframe animations*/
+#gallery a:nth-child(1) {
+	-webkit-animation: bannermove 30s linear infinite;
+	-moz-animation: bannermove 30s linear infinite;
+	-ms-animation: bannermove 30s linear infinite;
+	-o-animation: bannermove 30s linear infinite;
+}
+
+#gallery .row:hover a{
+	-moz-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
+}
+
+#gallery a {
+	position: relative;
+	display: inline-block;
+}
+
+#gallery .overlay {
+	position: absolute;
+	top: 0;
+	left: -5px;
+	height: 100%;
+	width: 601px;
+	opacity: 0;
+	background-color: #000;
+	transition: all .33s ease-in-out;
+}
+
+#gallery a:hover .overlay {
+	opacity: .6;
+}
+
+#gallery a .fa-search {
+	position: absolute;
+	left: 45%;
+	top: 45%;
+	color: #fff;
+	opacity: 0;
+	transition: opacity .33s ease-in-out;
+}
+
+#gallery a:hover .overlay + .fa-search {
+	opacity: 1;
+}
+
+.modal-backdrop {
+	z-index: 1;
+}
+
+#testimonials {
+	background-size: cover;
+	background-position: center center;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../img/bench.jpg');
+}
+
+#testimonials .row [class*='col-md-'] {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	margin-bottom: 80px;
+}
+
+#testimonials .carousel {
+	height: 220px;
+}
+
+#testimonials .carousel-indicators {
+	bottom: -90px;
+	left: 280px;
+}
+
+#testimonials .carousel-indicators .active {
+	border: none;
+	background-color: #e85a3c;
+	background-color: var(--color-2);
+}
+
+#testimonials .client * {
+	line-height: inherit;
+}
+
+#testimonials .client .company {
+	margin: 0;
+}
+
+#testimonials .client h3, .client h4 {
+	margin: 0;
+}
+
+.statement {
+	margin-top: 30px;
+}
+
+.client .title {
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #e85a3c;
+	color: var(--color-2);
+}
+
+.quote {
+	display: inline-flex;
+	text-align: left;
+	width: 800px;
+}
+
+.avatar img {
+	height: 210px;
+	width: 220px;
+	border-radius: 50%;
+	margin-right: 30px;
+	float: left;
+}
+
+@keyframes "bannermove" {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: -10599px;
+	}
+}
+
+@-moz-keyframes bannermove {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: -10599px;
+	}
+}
+
+@-webkit-keyframes "bannermove" {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: -10599px;
+	}
+}
+
+@-ms-keyframes "bannermove" {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: -10599px;
+	}
+}
+
+@-o-keyframes "bannermove" {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: -10599px;
+	}
+}
+
+#contact form {
+	width: 600px;
+	margin: auto;
+}
+
+#contact .form-group {
+	margin: 20px 0;
+}
+
+#contact .contact-text {
+	width: 600px;
+	margin: 0 auto 30px;
+}
+
+#contact .robotest {
+	display: none;
+}
+
+footer a {
+	color: #ffffff;
+	transition: all .33s ease-in-out;
+}
+
+footer a:hover {
+	color: var(--color-4);
+	color: #716f6f;
+	text-decoration: none;
+}
+
+footer [class*='fa-'] {
+	font-size: 28px;
+}
+
+footer h4 {
+	font-weight: 600;
+}
+
+footer [class*='slab-']:first-child div:last-child {
+	margin-top: 10px;
+}
+
+footer [class*='slab-'] [class*='col-md-'] {
+	padding: 0 80px;
+}
+
+footer, footer address{
+	line-height: 1.6;
+}
+
