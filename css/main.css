@@ -59,6 +59,14 @@ body {
 	background-color: transparent;
 }
 
+.navbar-toggle {
+	background-color: #ffffff;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #000000;
+}
+
 .jumbotron {
 	background-image: url("../img/cup-of-coffee.jpg");
 	background-size: cover;
@@ -82,10 +90,11 @@ body {
 
 .jumbotron > .container p {
 	margin-bottom: 30px;
+	font-size: 2rem;
 }
 
 .jumbotron h1 {
-	font-size: 100px;
+	font-size: 6vmax;
 	font-weight: 600;
 	letter-spacing: -3px;
 	margin-bottom: 25px;
@@ -123,7 +132,7 @@ body {
 [class*='slab'] h2 {
 	margin: 30px 0;
 	font-weight: 400;
-	font-size: 36px;
+	font-size: 3rem;
 }
 
 [class*='slab-'] {
@@ -178,6 +187,15 @@ body {
   #services [class*='slab-'] p {
 	  text-align: left;
   }
+
+	footer [class*='slab-'] [class*='col-md-'] {
+		padding: 0 80px;
+		text-align: left;
+	}
+
+	footer [class*='slab-'] [class*='col-md-']:last-child {
+		text-align: right;
+	}
 }
 
 .navbar-fixed-top {
@@ -388,6 +406,7 @@ body {
 footer a {
 	color: #ffffff;
 	transition: all .33s ease-in-out;
+	display: inline-block;
 }
 
 footer a:hover {
@@ -409,7 +428,7 @@ footer [class*='slab-']:first-child div:last-child {
 }
 
 footer [class*='slab-'] [class*='col-md-'] {
-	padding: 0 80px;
+	padding: 0;
 }
 
 footer, footer address{
