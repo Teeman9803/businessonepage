@@ -153,9 +153,24 @@ body {
 	order: 1;
 }
 
-#services .row[class*='slab'] {
+.flex-row {
 	display: flex;
-	align-items: center;
+	flex-wrap: wrap;
+}
+
+#services [class*='slab-'] {
+	display: inherit;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media (min-width: 780px) {
+	#services .full-width + [class='slab-'] {
+		order: 1;
+	}
+	#services .row:nth-child(even) .full-width {
+		order: 2;
+	}
 }
 
 .navbar-fixed-top {
