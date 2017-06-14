@@ -149,9 +149,6 @@ body {
 	padding: 0;
 }
 
-#services .row:nth-child(even) .full-width {
-	order: 1;
-}
 
 .flex-row {
 	display: flex;
@@ -162,14 +159,16 @@ body {
 	display: inherit;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
-@media (min-width: 780px) {
-	#services .full-width + [class='slab-'] {
+@media (min-width: 1000px) {
+	#services .row:nth-child(even) .full-width {
 		order: 1;
 	}
-	#services .row:nth-child(even) .full-width {
-		order: 2;
+
+	#services [class*='slab-'] {
+		align-items: flex-start;
 	}
 }
 
