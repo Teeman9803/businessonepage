@@ -190,7 +190,7 @@ var data = {
 
 	// Footer
 	footer: {
-		copyright: 'My New Business, 2015',
+		copyright: 'BusinessName, 2017',
 		company: {
 			logo : 'img/logo.png',
 			street : '123 Anywhere Place',
