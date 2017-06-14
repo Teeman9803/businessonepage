@@ -265,6 +265,7 @@ footer .logo {
 	}
 	.navbar-collapse .pull-right {
 		float: none !important;
+		z-index: 100;
 	}
 }
 
