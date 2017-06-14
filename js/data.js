@@ -2,10 +2,10 @@ var data = {
 
 	// Header
 	header: {
-		logo: 'Logo Goes Here',
-		tagline: 'Hello World',
-		subtext: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting                   pieces of content. Use it as a starting point to create something more unique.',
-		buttonText: 'Try it for free for 30 days'
+		logo: 'img/logo.png',
+		tagline: 'Simple Business Solutions',
+		subtext: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.',
+		buttonText: 'Start Your Free 30 Day Trial'
 	},
 
 	// Navigation
@@ -15,8 +15,8 @@ var data = {
 			url: '#about'
 		},
 		{
-			text: 'Services',
-			url: '#services'
+			text: 'Features',
+			url: '#features'
 		},
 		{
 			text: 'Gallery',
@@ -36,49 +36,49 @@ var data = {
 	about: [
 		{
 			background: 'brown',
-			title: 'Heading',
-			text: 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.',
+			title: '24 Hour Support',
+			text: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.',
 			icon: 'handshake-o'
 		},
 		{
 			background: 'orange',
-			title: 'Heading',
-			text: 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.',
+			title: 'Affordable Pricing',
+			text: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.',
 			icon: 'money'
 		},
 		{
 			background: 'dark',
-			title: 'Heading',
-			text: 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.',
+			title: 'Quality Products',
+			text: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.',
 			icon: 'star'
 		}
 	],
 
-	// Services
-	services: [
+	// Features
+	features : [
 		{
 			background: 'brown',
 			img: 'cup-of-coffee.jpg',
-			title: 'Heading',
-			text: 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'
+			title: 'Easy Setup',
+			text: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.'
 		},
 		{
 			background: 'orange',
 			img: 'cup-of-coffee.jpg',
-			title: 'Heading',
-			text: 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'
+			title: 'Client Dashboard',
+			text: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.'
 		},
 		{
 			background: 'dark',
 			img: 'cup-of-coffee.jpg',
-			title: 'Heading',
-			text: 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'
+			title: 'One-Click Reporting',
+			text: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.'
 		},
 		{
 			background: 'light',
 			img: 'cup-of-coffee.jpg',
-			title: 'Heading',
-			text: 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'
+			title: 'Social Media Integration',
+			text: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.'
 		},
 	],
 
@@ -150,7 +150,7 @@ var data = {
 	// Contact
 	contact: {
 		title: 'Contact Us',
-		text: 'Donec id elit non mi porta gravida dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.',
+		text: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.',
 		buttonText: 'Email Us',
 		email: 'test@test.com'
 	},
@@ -158,7 +158,7 @@ var data = {
 	// Testimonials
 	testimonials: [
 		{
-			quote: 'Appropriately simplify viral innovation with plug-and-play e-services. Authoritatively facilitate orthogonal users whereas emerging core competencies. Proactively orchestrate mission-critical systems after multidisciplinary sources. Energistically foster alternative ROI without timely.',
+			quote: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.',
 			client: 'The Playhouse Theatre',
 			name: 'Destinee Jackson',
 			active: 'active',
@@ -166,21 +166,21 @@ var data = {
 			image : 'img/cup-of-coffee.jpg'
 		},
 		{
-			quote: 'Interactively repurpose go forward applications before fully tested collaboration and idea-sharing. Seamlessly foster distributed content whereas standardized human capital. Seamlessly iterate high-quality opportunities via holistic functionalities. Efficiently foster.',
+			quote: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.',
 			client: 'Marketing Solutions',
 			name: 'William Barron, MS',
 			title: 'Director of Marketing',
 			image : 'img/cup-of-coffee.jpg'
 		},
 		{
-			quote: 'Interactively e-enable go forward action items after seamless vortals. Energistically productize resource maximizing methodologies and timely methodologies. Completely redefine cutting-edge niches and client-focused platforms. Rapidiously target effective niche.',
+			quote: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.',
 			client: 'Events by Nevi',
 			name: 'Lisa Margon',
 			title: 'CEO',
 			image : 'img/cup-of-coffee.jpg'
 		},
 		{
-			quote: 'Objectively grow clicks-and-mortar value vis-a-vis timely interfaces. Authoritatively network sustainable relationships through multidisciplinary channels. Compellingly revolutionize multimedia based total linkage whereas team driven networks. Distinctively recaptiualize top-line expertise.',
+			quote: 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.',
 			client: 'Sugarbakers Cookies',
 			name: 'Bob Hartsby',
 			title: 'CEO',
@@ -192,7 +192,7 @@ var data = {
 	footer: {
 		copyright: 'My New Business, 2015',
 		company: {
-			logo : 'Logo goes here',
+			logo : 'img/logo.png',
 			street : '123 Anywhere Place',
 			city : 'Anywhere',
 			state : 'USA',

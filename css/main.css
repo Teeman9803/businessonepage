@@ -100,13 +100,31 @@ body {
 	margin-bottom: 25px;
 }
 
-.jumbotron h1.navbar-brand {
-	font-size: 4px;
-}
 
 .jumbotron nav a {
 	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 5px;
+}
+
+.jumbotron nav a:not(.logo) {
+	font-size: 1.5rem;
+}
+
+.logo {
+	font-size: 24px;
 	font-weight: 500;
+	text-shadow: 0 1px var(--color-1);
+	text-shadow: 0 1px #333;
+}
+
+header .logo {
+	padding-top: 5px;
+}
+
+footer .logo {
+	padding-bottom: 5px;
 }
 
 .jumbotron .btn-lg {
@@ -164,14 +182,18 @@ body {
 }
 
 
-#services [class*='slab-'] {
+#features [class*='slab-'] {
 	display: inherit;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-#services [class*='slab-'] p {
+#features [class*='slab-'] p {
+	text-align: center;
+}
+
+#features h2 {
 	text-align: center;
 }
 
@@ -181,16 +203,16 @@ body {
 	width: 330px;
 }
 
-@media (min-width: 1000px) {
-	#services .row:nth-child(even) .full-width {
+@media (min-width: 900px) {
+	#features .row:nth-child(even) .full-width {
 		order: 1;
 	}
 
-	#services [class*='slab-'] {
+	#features [class*='slab-'] {
 		align-items: flex-start;
 	}
 
-  #services [class*='slab-'] p {
+  #features [class*='slab-'] p {
 	  text-align: left;
   }
 

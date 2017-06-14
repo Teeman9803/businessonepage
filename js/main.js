@@ -28,7 +28,7 @@
 		var partials_arr = [
 			'header',
 			'about',
-			'services',
+			'features',
 			'gallery',
 			'testimonials',
 			'contact',
