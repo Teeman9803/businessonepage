@@ -377,7 +377,7 @@ body {
 }
 
 #contact .contact-text {
-	width: 600px;
+	min-width: 600px;
 	margin: 0 auto 30px;
 }
 
