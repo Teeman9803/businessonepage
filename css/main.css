@@ -109,7 +109,7 @@ body {
 }
 
 .jumbotron nav a:not(.logo) {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 }
 
 .logo {
@@ -252,7 +252,7 @@ footer .logo {
 
 .navbar-fixed-top {
 	background-color: #333;
-	padding: 10px 0;
+	padding: 0;
 	transition: all .33s ease-in;
 }
 
@@ -271,12 +271,15 @@ footer .logo {
 
 /**** Gallery ****/
 #gallery {
-	overflow: hidden;
 	width: 100%;
 	height: 400px;
 }
 
 #gallery .row {
+	overflow: hidden;
+}
+
+#gallery .infinite-gallery {
 	overflow: hidden;
 	width: 7212px;
 }
@@ -338,7 +341,7 @@ footer .logo {
 	z-index: 1;
 }
 
-#testimonials {
+#testimonials .row {
 	background-size: cover;
 	background-position: center center;
 	background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('../img/bench.jpg');

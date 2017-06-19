@@ -21,7 +21,7 @@ https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightb
 
 <!-- Header Template -->
 <script id="header-template" type="text/x-handlebars-template">
-	<header id="home" class="jumbotron">
+	<header id="home" class="jumbotron row">
 		<nav class="navbar" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
@@ -92,23 +92,25 @@ https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightb
 	<section id="gallery" class="container slab text-center">
 		<!-- Example row of columns -->
 		<div class="row">
-			{{#each gallery}}
-				<a data-toggle="lightbox" href="#{{lightbox}}">
-					<div class="overlay"></div>
-					<i class="fa fa-search"></i>
-					<img width=auto height=400 src="img/{{img}}" alt="">
-				</a>
-			<div id="{{lightbox}}" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
-				<div class='lightbox-dialog'>
-					<div class='lightbox-content'>
-						<img src="img/{{img}}">
-						<div class='lightbox-caption'>
-							{{caption}}
+			<div class="infinite-gallery">
+				{{#each gallery}}
+					<a data-toggle="lightbox" href="#{{lightbox}}">
+						<div class="overlay"></div>
+						<i class="fa fa-search"></i>
+						<img width=auto height=400 src="img/{{img}}" alt="">
+					</a>
+				<div id="{{lightbox}}" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+					<div class='lightbox-dialog'>
+						<div class='lightbox-content'>
+							<img src="img/{{img}}">
+							<div class='lightbox-caption'>
+								{{caption}}
+							</div>
 						</div>
 					</div>
 				</div>
+				{{/each}}
 			</div>
-			{{/each}}
 		</div>
 	</section> <!-- /container -->
 </script>
@@ -180,29 +182,30 @@ https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightb
 
 <script id="footer-template" type="text/x-handlebars-template">
 	<footer class="slab text-center">
-		<div class="col-md-12 slab-dark">
-			<div class="col-md-3">
-				<a class="logo" href="#home">
-					<img src="{{header.logo}}" alt="Logo" />
-				</a>
-					<address>
-						{{footer.company.street}}<br>
-						{{footer.company.city}}, {{footer.company.state}}, {{footer.company.zip}}<br>
-						{{footer.company.phone}}<br>
-						<a href="mailto:{{footer.company.email}}">{{footer.company.email}}</a><br>
-					</address>
-				{{#each footer.social}}
-					<a href="{{url}}"><i class="fa fa-{{icon}} fa-1"></i></a>
-				{{/each}}
-			</div>
-			<div class="col-md-2">
-				<h4>Company</h4>
-				<ul class="list-unstyled">
-					{{#each footer.linkSection.links}}
-					<li><a href="{{url}}">{{text}}</a></li>
+		<div class="row">
+			<div class="col-md-12 slab-dark">
+				<div class="col-md-3">
+					<a class="logo" href="#home">
+						<img src="{{header.logo}}" alt="Logo" />
+					</a>
+						<address>
+							{{footer.company.street}}<br>
+							{{footer.company.city}}, {{footer.company.state}}, {{footer.company.zip}}<br>
+							{{footer.company.phone}}<br>
+							<a href="mailto:{{footer.company.email}}">{{footer.company.email}}</a><br>
+						</address>
+					{{#each footer.social}}
+						<a href="{{url}}"><i class="fa fa-{{icon}} fa-1"></i></a>
 					{{/each}}
-				</ul>
-			</div>
+				</div>
+				<div class="col-md-2">
+					<h4>Company</h4>
+					<ul class="list-unstyled">
+						{{#each footer.linkSection.links}}
+						<li><a href="{{url}}">{{text}}</a></li>
+						{{/each}}
+					</ul>
+				</div>
 			<div class="col-md-4">
 				<h4>Support</h4>
 				<ul class="list-unstyled">
@@ -213,6 +216,7 @@ https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightb
 			</div>
 			<div class="col-md-3">
 				&copy; {{footer.copyright}}
+			</div>
 			</div>
 		</div>
 	</footer>
