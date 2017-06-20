@@ -128,10 +128,6 @@ header .logo {
 	padding-top: 5px;
 }
 
-footer .logo {
-	padding-bottom: 5px;
-}
-
 .jumbotron .btn-lg {
 	font-size: 1.4rem;
 }
@@ -471,6 +467,14 @@ footer .logo {
 	display: none;
 }
 
+footer {
+	font-size: 1.4rem;
+}
+
+footer .logo {
+	padding-bottom: 5px;
+}
+
 footer a {
 	color: #ffffff;
 	transition: all .33s ease-in-out;
@@ -482,6 +486,7 @@ footer a:hover {
 	color: #716f6f;
 	text-decoration: none;
 }
+
 
 footer [class*='fa-'] {
 	font-size: 28px;
