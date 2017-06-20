@@ -183,6 +183,10 @@ header .logo {
 	padding: 0;
 }
 
+.flex-row [class*=col-] {
+	flex-shrink: 1;
+}
+
 
 #features [class*='slab-'] {
 	display: inherit;
