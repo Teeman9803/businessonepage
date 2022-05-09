@@ -75,8 +75,8 @@
 				dataType: 'jsonp',
 				data : {
 					to  : '',
-					from :  $('[name=email').val(),
-					msg  : $('[name=message').val()
+					from :  $('[name=email]').val(),
+					msg  : $('[name=message]').val()
 
 				},
 			  success : function() {
